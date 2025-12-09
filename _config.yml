@@ -11,7 +11,7 @@ plugins:
 
 author:
   name: "Yin Yuang"
-  avatar: "/your-photo.png" 
+  avatar: "/assets/images/your-photo.png" 
   bio: "Software Engineering Student at Nanjing University of Information Science and Technology (NUIST) and Watford Institute<br>Passionate about Reading, Music, Movies<br>Table Tennis & Saxophone Enthusiast"
   links:
     - label: "GitHub"
