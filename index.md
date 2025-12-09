@@ -2,9 +2,9 @@
 layout: home
 author_profile: true
 ---
+# Welcome to my website
 
-
-## Welcome to my website
+## Biref Introduction
 I'm a third-year Software Engineering student jointly trained by Nanjing University of Information Science and Technology (NUIST) and Waterford Institute, with a focus on **software development and system design**, and a passion for exploring cutting-edge technologies.
 
 ## Education Background
