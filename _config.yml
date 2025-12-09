@@ -1,0 +1,47 @@
+
+title: "Yin Yuang"
+name: "Yin Yuang"
+description: "Software Engineering Student at NUIST & Watford College | Passionate about Reading, Music, Movies | Table Tennis & Saxophone Enthusiast"
+url: "https://yya-yya.github.io" 
+baseurl: ""
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+plugins:
+  - jekyll-include-cache
+
+author:
+  name: "Yin Yuang"
+  avatar: "/your-photo.png" 
+  bio: "Software Engineering Student at Nanjing University of Information Science and Technology (NUIST) and Watford Institute<br>Passionate about Reading, Music, Movies<br>Table Tennis & Saxophone Enthusiast"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yya-yya" 
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:202383930027@nuist.edu.cn"
+
+header:
+  links:
+    - title: "Home"
+      url: "/"
+    - title: "About Me"
+      url: "/about/"
+    - title: "Projects"
+      url: "/projects/"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yya-yya" 
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:202383930027@nuist.edu.cn"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "single"
+      author_profile: true
