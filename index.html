@@ -3,74 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yin Yuang's Personal Website</title>
+    <title>Yin Yuang - Personal Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e0f7fa; /* Light blue background, like the sea or sky */
-            color: #333;
+        /* Resetting some basic styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(120deg, #74b9ff, #a29bfe); /* Blue to Purple gradient */
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Container for the website */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
         header {
             text-align: center;
-            padding: 50px 0;
-            background-color: #00796b; /* Dark teal, like the deep sea */
-            color: white;
+            padding: 100px 20px;
         }
+
         header h1 {
-            font-size: 2.5em;
-            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
         }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
         }
-        .photo {
+
+        /* About Section */
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            flex-wrap: wrap;
+        }
+
+        .about img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            margin-top: 20px;
+            margin-right: 30px;
         }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #00796b;
-            color: white;
-            margin-top: 40px;
+
+        .about-text {
+            max-width: 600px;
+            text-align: left;
         }
-        .contact {
+
+        .about-text h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
             font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #2d3436;
+            padding: 50px 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            color: #fff;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            color: #fff;
             margin-top: 20px;
+        }
+
+        .contact a {
+            color: #74b9ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #34495e;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about img {
+                margin-bottom: 20px;
+            }
+
+            .about-text h2 {
+                font-size: 1.8em;
+            }
+
+            .contact h2 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Welcome to Yin Yuang's Personal Website</h1>
-    <p>Software Engineering Student at NUIST & Watford College</p>
-</header>
+    <!-- Container -->
+    <div class="container">
 
-<section>
-    <h2>About Me</h2>
-    <p>Hello, I am a third-year Software Engineering student at Nanjing University of Information Science and Technology (NUIST) and Watford College.</p>
-    <p>In my free time, I love exploring the world of words, reading various books to enrich myself; I also enjoy relaxing to music, finding peace in melodies; occasionally, I watch a few movies to experience different life stories.</p>
-    <p>In terms of skills, I am not only passionate about table tennis, where I enjoy the fun of attack and defense, but I also play the saxophone, expressing my feelings through its melodious tunes.</p>
-    <img class="photo" src="your-photo.png" alt="Yin Yuang Photo">
-</section>
+        <!-- Header -->
+        <header>
+            <h1>Yin Yuang</h1>
+            <p>Software Engineering Student at NUIST & Watford College</p>
+        </header>
 
-<section>
-    <h2>Contact Me</h2>
-    <p class="contact">Email: 202383930027@nuist.edu.cn</p>
-</section>
+        <!-- About Section -->
+        <section class="about">
+            <img src="your-photo.png" alt="Yin Yuang Photo">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello, I am a third-year Software Engineering student at Nanjing University of Information Science and Technology (NUIST) and Watford Institute.</p>
+                <p>In my free time, I love reading various books, exploring new concepts in technology, and relaxing to music. I also enjoy watching movies to experience different life stories.</p>
+                <p>Skills: I'm passionate about playing table tennis and expressing my thoughts through the smooth tones of the saxophone.</p>
+            </div>
+        </section>
 
-<footer>
-    <p>© 2025 Yin Yuang. All Rights Reserved.</p>
-</footer>
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch with me, feel free to reach out via email:</p>
+            <p><a href="mailto:202383930027@nuist.edu.cn">202383930027@nuist.edu.cn</a></p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 Yin Yuang. All Rights Reserved.</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
